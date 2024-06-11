@@ -1,0 +1,9 @@
+.hover__card {
+  @include on-tablet {
+    @include hover(transform, scale(1.1));
+
+    &--translateY {
+      @include hover(transform, scale(1.1) translateY(-50%));
+    }
+  }
+}

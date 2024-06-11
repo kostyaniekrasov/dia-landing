@@ -1,0 +1,61 @@
+.cta {
+  background-color: $c-white;
+  padding: 72px 0;
+
+  width: 100%;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+
+  @include on-tablet {
+    padding: 200px 0;
+    background-image: url("./images/cta/shapes-tablet-1.webp");
+  }
+
+  @include on-small-desktop {
+    background-size: contain;
+    background-image: url("./images/cta/shapes-design.webp");
+  }
+
+  @include on-design {
+    background-image: url("./images/cta/shapes-design.webp");
+  }
+  &__block {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    &--title {
+      font-size: 44px;
+      line-height: 120%;
+      margin-bottom: 24px;
+      width: 280px;
+
+      @include on-tablet {
+        font-size: 52px;
+        width: 558px;
+      }
+
+      @include on-small-desktop {
+        width: 754px;
+        line-height: 150%;
+      }
+    }
+
+    &--description {
+      font-size: 24px;
+      font-weight: 600;
+
+      margin-bottom: 56px;
+
+      @include on-tablet {
+        margin-bottom: 64px;
+        max-width: 558px;
+      }
+
+      @include on-small-desktop {
+        max-width: 754px;
+      }
+    }
+  }
+}

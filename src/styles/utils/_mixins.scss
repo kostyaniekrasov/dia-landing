@@ -1,0 +1,141 @@
+@mixin hover($_property, $_toValue) {
+  transition: #{$_property} 0.3s;
+  &:hover {
+    #{$_property}: $_toValue;
+  }
+}
+
+@mixin active($_property, $_toValue) {
+  transition: #{$_property} 0.3s;
+  &:active {
+    #{$_property}: $_toValue;
+  }
+}
+
+@mixin on-tablet {
+  @media (min-width: $tablet-min-width) {
+    @content;
+  }
+}
+
+@mixin on-small-desktop {
+  @media (min-width: $small-desktop-min-width) {
+    @content;
+  }
+}
+
+@mixin on-desktop {
+  @media (min-width: $desktop-min-width) {
+    @content;
+  }
+}
+
+@mixin on-design {
+  @media (min-width: $design-min-width) {
+    @content;
+  }
+}
+
+@mixin on-large {
+  @media (min-width: $large-screens-min-width) {
+    @content;
+  }
+}
+
+@mixin content-padding-inline() {
+  padding-inline: 20px;
+
+  @include on-tablet {
+    padding-inline: 40px;
+  }
+
+  @include on-small-desktop {
+    margin-inline: auto;
+    padding-inline: 54px;
+  }
+
+  @include on-desktop {
+    margin-inline: auto;
+    padding-inline: 120px;
+  }
+
+  @include on-design {
+    margin-inline: auto;
+    padding-inline: 227px;
+  }
+
+  @include on-large {
+    max-width: 1600px;
+    margin-inline: auto;
+    padding-inline: 707px;
+  }
+}
+
+@mixin ignore-container-padding {
+  margin-left: -20px;
+  margin-right: -20px;
+
+  @include on-tablet {
+    margin-left: -40px;
+    margin-right: -40px;
+  }
+
+  @include on-small-desktop {
+    margin-left: 0;
+    margin-right: -54px;
+  }
+
+  @include on-desktop {
+    margin-left: 0;
+    margin-right: -120px;
+  }
+
+  @include on-design {
+    margin-left: 0;
+    margin-right: -227px;
+  }
+
+  @include on-large {
+    margin-left: 0;
+    margin-right: -707px;
+  }
+}
+
+@mixin card {
+  box-sizing: border-box;
+  background-color: $c-white;
+  border-radius: 16px;
+}
+
+.container {
+  @include content-padding-inline;
+}
+
+@mixin page-grid {
+  --columns: 2;
+
+  display: grid;
+  column-gap: 20px;
+  grid-template-columns: repeat(var(--columns), 1fr);
+
+  @include on-tablet {
+    column-gap: 30px;
+
+    --columns: 6;
+  }
+
+  @include on-small-desktop {
+    column-gap: 20px;
+
+    --columns: 12;
+  }
+
+  @include on-design {
+    column-gap: 30px;
+  }
+}
+
+@mixin c-white-and-br {
+  background-color: $c-white;
+  border-radius: 30px;
+}
