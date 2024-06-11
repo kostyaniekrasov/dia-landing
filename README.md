@@ -1,7 +1,7 @@
 # Dia landing with HTML, SCSS and JS.
 
 - [DEMO LINK](https://kostyaniekrasov.github.io/dia-landing/)
-- [DESIGN LINK](<(https://www.figma.com/design/7qwsWggv9BAxMi2VPhBuPr/Air-(formerly-Dia))?node-id=0-1&t=IF1G6Tw1hqf5e5SP-0>)
+- [DESIGN LINK](https://www.figma.com/design/7qwsWggv9BAxMi2VPhBuPr/Air-(formerly-Dia))
 
 This project requires Node.js version 14. Please follow the steps below to set up the project locally.
 
