@@ -148,34 +148,27 @@
         width: 30px;
         height: 30px;
         background-size: contain;
+        mask-repeat: no-repeat;
+        background-color: #fff;
 
         &-facebook {
-          background-image: url("./images/footer/facebook.svg");
+          mask-image: url("./images/footer/facebook.svg");
 
-          @include hover(
-            background-image,
-            url("./images/footer/facebook-blue.svg")
-          );
+          @include hover(background-color, #144ed4);
           @include hover(transform, scale(1.3));
         }
 
         &-twitter {
-          background-image: url("./images/footer/twitter.svg");
+          mask-image: url("./images/footer/twitter.svg");
 
-          @include hover(
-            background-image,
-            url("./images/footer/twitter-blue.svg")
-          );
+          @include hover(background-color, #144ed4);
           @include hover(transform, scale(1.3));
         }
 
         &-instagram {
-          background-image: url("./images/footer/instagram.svg");
+          mask-image: url("./images/footer/instagram.svg");
 
-          @include hover(
-            background-image,
-            url("./images/footer/instagram-blue.svg")
-          );
+          @include hover(background-color, #144ed4);
           @include hover(transform, scale(1.3));
         }
       }

@@ -17,7 +17,7 @@
   }
 
   &__section {
-    &__titled {
+    &--titled {
       color: $c-titled;
       font-size: 13px;
       font-style: normal;
@@ -35,7 +35,7 @@
       }
     }
 
-    &__title {
+    &--title {
       color: $c-title;
       font-style: normal;
       font-weight: 600;
@@ -49,7 +49,7 @@
       }
     }
 
-    &__description {
+    &--description {
       color: $c-description;
       font-family: "Open Sans", sans-serif;
       font-style: normal;
