@@ -1,0 +1,2 @@
+var t=document.querySelector(".btn--prev"),e=document.querySelector(".btn--next"),n=document.querySelectorAll(".slide"),c=0;n.forEach(function(t,e){t.style.left="".concat(100*e,"%")}),t.addEventListener("click",function(){0!==c&&(c--,o())}),e.addEventListener("click",function(){c<n.length-1&&(c++,o())});var o=function(){n.forEach(function(t){t.style.transform="translateX(-".concat(100*c,"%)")})};
+//# sourceMappingURL=index.d4688c60.js.map
