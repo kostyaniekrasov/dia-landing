@@ -23,12 +23,12 @@ It also features client testimonials and an overview of the agency's approach to
 
 **1. Clone the repository:**
 ```
-git clone https://github.com/kostyaniekrasov/museum_v2-landing.git
+git clone https://github.com/kostyaniekrasov/dia-landing.git
 ```
 
 **2. Navigate to the project directory:**
 ```
-cd museum_v2-landing
+cd dia-landing
 ```
 **3. Install the dependencies:**
 ```
